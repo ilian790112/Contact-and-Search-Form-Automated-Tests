@@ -96,7 +96,7 @@ namespace AutomationTests.Pages.BoogabooContactFormPage
         {
             get
             {
-                return this.IWebDriver.FindElement(By.XPath("//*[@id=\"new_file_row[0]\"]/td/div/label[2]"));
+                return this.IWebDriver.FindElement(By.XPath("//label[@class='custom-file-input']"));
             }
         }
 
@@ -114,7 +114,7 @@ namespace AutomationTests.Pages.BoogabooContactFormPage
         {
             get
             {
-                return this.IWebDriver.FindElement(By.XPath("//*[@id=\"p_p_id_contactsupportpage_WAR_contactsupportpageportlet_\"]/div/div/div[2]/section/div/div/header/h2"));
+                return this.IWebDriver.FindElement(By.XPath("//h2[text()='Thank you']"));
             }
         }
 

@@ -27,8 +27,8 @@ namespace AutomationTests.Pages.YavlenaSearchFormPage
         {
             get
             {
-                this.Wait.Until(ExpectedConditions.ElementExists(By.XPath("//*[@id=\"serviceChoice\"]/div[2]/div/div/ul/li/label[1]/span")));
-                return this.IWebDriver.FindElement(By.XPath("//*[@id=\"serviceChoice\"]/div[2]/div/div/ul/li/label[1]/span"));
+                this.Wait.Until(ExpectedConditions.ElementExists(By.ClassName("buy-label")));
+                return this.IWebDriver.FindElement(By.ClassName("buy-label"));
             }
         }
 
@@ -37,8 +37,8 @@ namespace AutomationTests.Pages.YavlenaSearchFormPage
         {
             get
             {
-                this.Wait.Until(ExpectedConditions.ElementExists(By.XPath("//*[@id=\"serviceChoice\"]/div[2]/div/div/ul/li/label[2]/span")));
-                return this.IWebDriver.FindElement(By.XPath("//*[@id=\"serviceChoice\"]/div[2]/div/div/ul/li/label[2]/span"));
+                this.Wait.Until(ExpectedConditions.ElementExists(By.ClassName("rent-label")));
+                return this.IWebDriver.FindElement(By.ClassName("rent-label"));
             }
         }
 
@@ -47,8 +47,8 @@ namespace AutomationTests.Pages.YavlenaSearchFormPage
         {
             get
             {
-                this.Wait.Until(ExpectedConditions.ElementExists(By.XPath("/html/body/div[2]/div/section/div/form/div[2]/div/div[1]/a")));
-                return this.IWebDriver.FindElement(By.XPath("/html/body/div[2]/div/section/div/form/div[2]/div/div[1]/a"));
+                this.Wait.Until(ExpectedConditions.ElementExists(By.CssSelector(".placeholder[placeholder='тип имот']")));
+                return this.IWebDriver.FindElement(By.CssSelector(".placeholder[placeholder='тип имот']"));
             }
         }
 
@@ -59,8 +59,8 @@ namespace AutomationTests.Pages.YavlenaSearchFormPage
         {
             get
             {
-                this.Wait.Until(ExpectedConditions.ElementExists(By.XPath("/html/body/div[2]/div/section/div/form/div[2]/div/div[2]/div/div/ul/li[1]/div/label[1]/div")));
-                return this.IWebDriver.FindElement(By.XPath("/html/body/div[2]/div/section/div/form/div[2]/div/div[2]/div/div/ul/li[1]/div/label[1]/div"));
+                this.Wait.Until(ExpectedConditions.ElementExists(By.XPath("//label[text()='Стая']")));
+                return this.IWebDriver.FindElement(By.XPath("//label[text()='Стая']"));
             }
         }
 
@@ -69,8 +69,8 @@ namespace AutomationTests.Pages.YavlenaSearchFormPage
         {
             get
             {
-                this.Wait.Until(ExpectedConditions.ElementExists(By.XPath("/html/body/div[2]/div/section/div/form/div[2]/div/div[2]/div/div/ul/li[1]/div/label[8]/div")));
-                return this.IWebDriver.FindElement(By.XPath("/html/body/div[2]/div/section/div/form/div[2]/div/div[2]/div/div/ul/li[1]/div/label[8]/div"));
+                this.Wait.Until(ExpectedConditions.ElementExists(By.XPath("//label[text()='Къща']")));
+                return this.IWebDriver.FindElement(By.XPath("//label[text()='Къща']"));
             }
         }
 
@@ -81,8 +81,8 @@ namespace AutomationTests.Pages.YavlenaSearchFormPage
         {
             get
             {
-                this.Wait.Until(ExpectedConditions.ElementExists(By.XPath("/html/body/div[2]/div/section/div/form/div[2]/div/div[2]/div/div/ul/li[2]/div/label[1]/div")));
-                return this.IWebDriver.FindElement(By.XPath("/html/body/div[2]/div/section/div/form/div[2]/div/div[2]/div/div/ul/li[2]/div/label[1]/div"));
+                this.Wait.Until(ExpectedConditions.ElementExists(By.XPath("//label[text()='Офис']")));
+                return this.IWebDriver.FindElement(By.XPath("//label[text()='Офис']"));
             }
         }
 
@@ -91,8 +91,8 @@ namespace AutomationTests.Pages.YavlenaSearchFormPage
         {
             get
             {
-                this.Wait.Until(ExpectedConditions.ElementExists(By.XPath("/html/body/div[2]/div/section/div/form/div[2]/div/div[2]/div/div/ul/li[3]/a")));
-                return this.IWebDriver.FindElement(By.XPath("/html/body/div[2]/div/section/div/form/div[2]/div/div[2]/div/div/ul/li[3]/a"));
+                this.Wait.Until(ExpectedConditions.ElementExists(By.XPath("//a[text()='Индустриални имоти']")));
+                return this.IWebDriver.FindElement(By.XPath("//a[text()='Индустриални имоти']"));
             }
         }
 
@@ -100,8 +100,8 @@ namespace AutomationTests.Pages.YavlenaSearchFormPage
         {
             get
             {
-                this.Wait.Until(ExpectedConditions.ElementExists(By.XPath("/html/body/div[2]/div/section/div/form/div[2]/div/div[2]/div/div/ul/li[1]")));
-                return this.IWebDriver.FindElement(By.XPath("/html/body/div[2]/div/section/div/form/div[2]/div/div[2]/div/div/ul/li[1]"));
+                this.Wait.Until(ExpectedConditions.ElementExists(By.XPath("//a[text()='Жилищни имоти']")));
+                return this.IWebDriver.FindElement(By.XPath("//a[text()='Жилищни имоти']"));
             }
         }
 
@@ -109,8 +109,8 @@ namespace AutomationTests.Pages.YavlenaSearchFormPage
         {
             get
             {
-                this.Wait.Until(ExpectedConditions.ElementExists(By.XPath("/html/body/div[2]/div/section/div/form/div[2]/div/div[2]/div/div/ul/li[3]/div/label[1]/div")));
-                return this.IWebDriver.FindElement(By.XPath("/html/body/div[2]/div/section/div/form/div[2]/div/div[2]/div/div/ul/li[3]/div/label[1]/div"));
+                this.Wait.Until(ExpectedConditions.ElementExists(By.XPath("//label[text()='Склад']")));
+                return this.IWebDriver.FindElement(By.XPath("//label[text()='Склад']"));
             }
         }
 
@@ -132,8 +132,8 @@ namespace AutomationTests.Pages.YavlenaSearchFormPage
         {
             get
             {
-                this.Wait.Until(ExpectedConditions.ElementExists(By.XPath("/html/body/div[2]/div/section/div/form/div[3]/div/div[1]/a")));
-                return this.IWebDriver.FindElement(By.XPath("/html/body/div[2]/div/section/div/form/div[3]/div/div[1]/a"));
+                this.Wait.Until(ExpectedConditions.ElementExists(By.XPath("//*[@id=\"searchBox\"]/following-sibling::a[1]")));
+                return this.IWebDriver.FindElement(By.XPath("//*[@id=\"searchBox\"]/following-sibling::a[1]"));
             }
         }
 
@@ -142,8 +142,8 @@ namespace AutomationTests.Pages.YavlenaSearchFormPage
         {
             get
             {
-                this.Wait.Until(ExpectedConditions.ElementExists(By.XPath("//*[@id=\"districts-list\"]/div/div/label[4]/div/ins")));
-                return this.IWebDriver.FindElement(By.XPath("//*[@id=\"districts-list\"]/div/div/label[4]/div/ins"));
+                this.Wait.Until(ExpectedConditions.ElementExists(By.XPath("//span[text()='Бургас']")));
+                return this.IWebDriver.FindElement(By.XPath("//span[text()='Бургас']"));
             }
         }
 
@@ -151,8 +151,8 @@ namespace AutomationTests.Pages.YavlenaSearchFormPage
         {
             get
             {
-                this.Wait.Until(ExpectedConditions.ElementExists(By.XPath("//*[@id=\"locations-list\"]/div/label[1]/div/ins")));
-                return this.IWebDriver.FindElement(By.XPath("//*[@id=\"locations-list\"]/div/label[1]/div/ins"));
+                this.Wait.Until(ExpectedConditions.ElementExists(By.XPath("//span[text()='Айтос']")));
+                return this.IWebDriver.FindElement(By.XPath("//span[text()='Айтос']"));
             }
         }
 
@@ -161,8 +161,8 @@ namespace AutomationTests.Pages.YavlenaSearchFormPage
         {
             get
             {
-                this.Wait.Until(ExpectedConditions.ElementExists(By.XPath("/html/body/div[2]/div/section/div/form/div[4]/button")));
-                return this.IWebDriver.FindElement(By.XPath("/html/body/div[2]/div/section/div/form/div[4]/button"));
+                this.Wait.Until(ExpectedConditions.ElementExists(By.XPath("//button[@class='green-btn']")));
+                return this.IWebDriver.FindElement(By.XPath("//button[@class='green-btn']"));
             }
         }
 
@@ -180,8 +180,8 @@ namespace AutomationTests.Pages.YavlenaSearchFormPage
         {
             get
             {
-                this.Wait.Until(ExpectedConditions.ElementExists(By.XPath("/html/body/div[2]/div/section[2]/div/div[1]/div/aside/div/div[1]/span")));
-                return this.IWebDriver.FindElement(By.XPath("/html/body/div[2]/div/section[2]/div/div[1]/div/aside/div/div[1]/span"));
+                this.Wait.Until(ExpectedConditions.ElementExists(By.ClassName("estates-breadcrumb")));
+                return this.IWebDriver.FindElement(By.ClassName("estates-breadcrumb"));
             }
         }
 

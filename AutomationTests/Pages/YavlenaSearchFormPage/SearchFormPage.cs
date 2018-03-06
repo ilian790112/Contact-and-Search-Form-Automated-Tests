@@ -9,6 +9,7 @@ using Models;
 using OpenQA.Selenium.Chrome;
 using System.Drawing;
 using OpenQA.Selenium.Interactions;
+using System.Threading;
 
 namespace AutomationTests.Pages.YavlenaSearchFormPage
 {
@@ -109,6 +110,7 @@ namespace AutomationTests.Pages.YavlenaSearchFormPage
             this.TypeOfProperty.Click();
             this.House.Click();
             this.Region.Click();
+            Thread.Sleep(TimeSpan.FromSeconds(1));
             this.Burgas.Click();
             this.Aitos.Click();
             this.ButtonFind.Click();
